@@ -127,5 +127,6 @@ public class HealthController : MonoBehaviour
     public void HomeButton()
     {
         SceneManager.LoadScene("MainMenu");
+        
     }
 }

@@ -130,8 +130,10 @@ public class Player : MonoBehaviour
             StartCoroutine(SlowDownCoroutine());
         } else if (collision.gameObject.CompareTag("Level 1 Door")) {
             SceneManager.LoadScene("Level2");
+            maxX = 15.8f;
         } else if (collision.gameObject.CompareTag("Level 2 Door")) {
             SceneManager.LoadScene("Level3");
+            maxX = 17.5f;
         } else if (collision.gameObject.CompareTag("Lava")) {
             life -= 2;
         } else if (collision.gameObject.CompareTag("Bear Trap")) {
