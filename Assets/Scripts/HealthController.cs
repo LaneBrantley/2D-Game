@@ -110,6 +110,7 @@ public class HealthController : MonoBehaviour
                 break;
             default:
                 break;
+
         }
 
         if (clipToPlay != null && audioSource.clip != clipToPlay)
@@ -126,6 +127,7 @@ public class HealthController : MonoBehaviour
 
     public void HomeButton()
     {
+        audioSource.clip = null;
         SceneManager.LoadScene("MainMenu");
         
     }
